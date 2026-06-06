@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Archives</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7f9;
+        --panel: #ffffff;
+        --text: #1c2430;
+        --muted: #5f6b7a;
+        --border: #d9dee7;
+        --accent: #9f1239;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+      }
+
+      main {
+        width: min(720px, calc(100% - 32px));
+        padding: 40px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 16px 40px rgba(28, 36, 48, 0.08);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 7vw, 3.5rem);
+        line-height: 1.05;
+      }
+
+      .description {
+        margin: 20px 0 0;
+        color: var(--muted);
+        font-size: 1.15rem;
+      }
+
+      .notice {
+        margin: 28px 0 0;
+        padding: 16px;
+        border-left: 4px solid var(--accent);
+        background: #fff5f7;
+        color: #3f1d28;
+      }
+
+      .meta {
+        margin: 28px 0 0;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Static hosting demo</p>
+      <h1>AI Archives</h1>
+      <p class="description">
+        Archive, organize, and retrieve conversations from ChatGPT, Claude, and Gemini.
+      </p>
+      <p class="notice">
+        This page is a static S3 hosting demo. It is not the full-stack AI Archives app and does not include API routes, database access, authentication, uploads, or server-rendered conversation pages.
+      </p>
+      <p class="meta">
+        The production application should run on a full-stack hosting platform, while S3 can store raw archived files and serve simple static demos like this page.
+      </p>
+    </main>
+  </body>
+</html>
